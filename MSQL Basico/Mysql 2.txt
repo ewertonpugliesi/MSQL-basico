@@ -1,0 +1,16 @@
+Create Database RH;
+use RH;
+create table depto(
+Nrdepto int(2) unsigned zerofill not null,
+Nomdepto char(25),
+Qtdfunc int(2),
+Primary Key(Nrdepto));
+show tables;
+Describe depto;
+Insert into depto values
+(14, ‘Pessoal’, 11), (15, ‘Vendas’, 9), (13, ‘Producao’, 109);
+select Nrdepto,Nomdepto from Depto;
+select nomdepto from depto
+where Nrdepto=12;
+select nomdepto from depto
+where Nrdepto>20;

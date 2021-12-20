@@ -1,0 +1,24 @@
+mysql> select version();
+mysql> select sin(pi()/4),(4+1)*5;
+mysql> select now();
+mysql> create database escola;
+mysql> use escola;
+mysql> created table aluno(
+Matricula   int(2) unsigned zerofill not null,
+Nome        char(40),
+Sexo         char(01),
+Endereco char(13),
+PRIMARY KEY(Matricula));
+mysql> INSERT INTO  Aluno  VALUES
+(1,’Magnolia’,’F’, ‘Rua A, 13’), 
+(2,’Epaminondas’,’M’,’Rua B, 14’),
+(3,’Raymunda’,’F’,’Rua C, 15’), 
+(4,’Emengarda’,’F’,’Rua D, 16’),
+(5,’Asdrubal’,’M’,’Rua E, 17’);
+mysql> select* from aluno;
+mysql> select matricula,nome from aluno;
+mysql> select nome,endereco from aluno;
+mysql> select matricula,endereco,sexo,nome from aluno;
+mysql> select matricula,nome,endereco from aluno;
+mysql> select*from aluno where matricula>3;
+mysql>show tables;

@@ -1,0 +1,33 @@
+Create Database Universidade;
+use universidade;
+create table Alunoo(
+Matricula int(2) unsigned zerofill not null,
+Nome char(35),
+Média decimal(3.1),
+Primary Key(Matricila));
+show tables;
+Describe aluno;
+Insert into aluno values (1234, ‘Maria da Silva’,8.2),
+Insert into aluno values (1235, ‘João da Silva’,5.5),
+Insert into aluno values (1236, ‘Jose da Silva’,10.0),
+Insert into aluno values (1237, ‘Ana da Silva’,0.0),
+Insert into aluno values(1238, ‘Ari da Silva’,7.0);
+select * from aluno;
+select Nome,Media from aluno;
+select Nome,Media from aluno
+where Media>5.0;
+select Matricula,Nome,Media from aluno
+where Matricula>1234 && Matricula<1237;
+select Nome,Media from aluno
+where Matricula>1235 && Media<5.0;
+select Matricula,Nome from aluno
+where Media=7.0||Media>7.0;
+select Matricula,Nome,Media from aluno
+where Nome='Jose da Silva';
+select * from aluno
+where Nome='Maria da Silva'||Nome='Ana da Silva';
+select * from aluno
+where Nome='João da Silva'||Nome='Jose da Silva';
+
+ 
+
